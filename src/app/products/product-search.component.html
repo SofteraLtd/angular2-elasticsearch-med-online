@@ -1,0 +1,18 @@
+  <form>
+    <div id="product-search" class="row">
+      <div class="offset-sm-1 col-sm-10">
+        <h2 class="text-center mb-4">Search Med Online</h2>
+        <div class="form-group" [class.has-danger]="searchFailed">
+          <input name="search" type="text" class="form-control form-control-lg" [(ngModel)]="userInput" [ngbTypeahead]="suggest" />
+          <span *ngIf="searching">searching...</span>
+          <div class="form-control-feedback" *ngIf="searchFailed">Sorry, suggestions could not be loaded.</div>
+        </div>        
+        <div class="text-center">
+          <button class="btn btn-lg btn-outline-primary" type="button" (click)="search()">Search</button>
+          <button class="btn btn-lg btn-outline-warning" type="button" (click)="fuzzy()">Fuzzy</button>
+        </div>
+      </div>
+    </div>
+  </form>
+  <div class='has-error' *ngIf='errorMessage'>{{errorMessage}}</div>
+  <products-list [products]='result'></products-list>

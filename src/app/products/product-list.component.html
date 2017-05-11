@@ -1,0 +1,24 @@
+<div class='table-responsive'>
+  <table id="products-list" class="table" *ngIf='products && products.length'>
+    <thead>
+      <tr>
+        <th>Brand</th>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Description</th>
+        <th>Price</th>
+        <th>Category</th>
+      </tr>
+    </thead>
+    <tbody>
+       <tr *ngFor='let product of products'>
+        <td>{{product._source.brand}}</td>
+        <td>{{product._source.id}}</td>
+        <td>{{product._source.name | uppercase}}</td>
+        <td>{{product._source.descr}}</td>
+        <td>{{product._source.price | currency:'USD':true:'1.2-2'}}</td>
+        <td>{{product._source.category}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
