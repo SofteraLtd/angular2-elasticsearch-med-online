@@ -13,7 +13,7 @@
     "lint": "tslint ./src/**/*.ts -t verbose"
   },
   "keywords": [],
-  "author": "Softera",
+  "author": "Softera Pvt Ltd",
   "license": "MIT",
   "dependencies": {
     "@angular/common": "~2.4.0",
