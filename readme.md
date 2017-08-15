@@ -1,6 +1,6 @@
 # Google-like Searches for Sites
 
-[![Build Status](https://travis-ci.org/SofteraUK/angular2-elasticsearch-med-online.svg?branch=master)](https://travis-ci.org/SofteraUK/angular2-elasticsearch-med-online)
+[![Build Status](https://travis-ci.org/SofteraLtd/angular2-elasticsearch-med-online.svg?branch=master)](https://travis-ci.org/SofteraUK/angular2-elasticsearch-med-online)
 
 * For context / details about this project see the Softera blog at: 
 [https://www.softera.io/blog/march-2017/google-like-searches-for-sites](https://www.softera.io/blog/march-2017/google-like-searches-for-sites)
